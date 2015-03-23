@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:orientation="vertical" >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제13회 성남시연합회장배 생활체육 아이스하키대회대회를 개최합니다.\n시간: 2015. 3. 15(일) ~ 4. 5(일)\n장소: 탄천종합운동장내 빙상장"
+            android:textIsSelectable="true"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bebebe" >
+    </View>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2015. 3. 15(일)에 개최 예정이었던 제13회 성남시연합회장배 생활체육 아이스하키대회대회가 취소되었습니다.\n빠른 시일 내에 다시 공지하겠습니다."
+            android:textIsSelectable="true"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bebebe" >
+    </View>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제13회 성남시연합회장배 생활체육 아이스하키대회대회의 개최 날짜가 연기되었습니다.\n시간: 2015. 3. 22(일) ~ 4. 5(일)\n장소: 탄천종합운동장내 빙상장"
+            android:textIsSelectable="true"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bebebe" >
+    </View>
+</LinearLayout>

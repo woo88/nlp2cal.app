@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="10dp"
+              android:background="@android:color/background_light">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="붙여넣기"
+            android:id="@+id/txt_paste" android:layout_gravity="center_horizontal" android:clickable="true"
+            android:background="#ff5882ff"
+            android:paddingLeft="70dp" android:paddingTop="10dp"
+            android:paddingRight="70dp" android:paddingBottom="10dp"
+            android:onClick="paste" android:textColor="#ffffffff"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#bebebe" >
+    </View>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 메시지"
+                        android:id="@+id/attrTitle"
+                        />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <TextView
+                        android:id="@+id/textViewTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="붙여넣기 버튼을 누르세요."
+                        android:textColor="#0000ff"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp" >
+                <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 시간"
+                        android:id="@+id/attrTime"
+                        />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" >
+                        <TextView
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:text="시작"
+                                android:id="@+id/attrStartTime"
+                                />
+                        <View
+                                android:layout_width="1sp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10dp"
+                                android:background="#bebebe" >
+                        </View>
+                        <TextView
+                                android:id="@+id/textViewStartTime"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#333333"
+                                />
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10dp" >
+                        <TextView
+                                android:layout_width="35dp"
+                                android:layout_height="wrap_content"
+                                android:text="종료"
+                                android:id="@+id/attrEndTime"
+                                />
+                        <View
+                                android:layout_width="1sp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginRight="10dp"
+                                android:background="#bebebe" >
+                        </View>
+                        <TextView
+                                android:id="@+id/textViewEndTime"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#333333"
+                                />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp" >
+                <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 장소"
+                        android:id="@+id/attrLocation"
+                        />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <TextView
+                        android:id="@+id/textViewLocation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp" >
+                <TextView
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="> 타입"
+                        android:id="@+id/attrType"
+                        />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <TextView
+                        android:id="@+id/textViewType"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        />
+            </LinearLayout>
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#bebebe" >
+            </View>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="신규"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#bbbbbb"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#ffffffff"
+                        android:clickable="false"
+                        android:id="@+id/textViewInsert"
+                        android:onClick="insertEvent" />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="변경"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#bbbbbb"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#ffffffff"
+                        android:clickable="false"
+                        android:id="@+id/textViewUpdate"
+                        android:onClick="updateEvent" />
+                <View
+                        android:layout_width="1sp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#bebebe" >
+                </View>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="취소"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="#bbbbbb"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#ffffffff"
+                        android:clickable="false"
+                        android:id="@+id/textViewDelete"
+                        android:onClick="deleteEvent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
