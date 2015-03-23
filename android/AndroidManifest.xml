@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="kr.ac.kaist.nlp2cal"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:theme="@android:style/Theme.Holo.Light" >
+        <activity android:name="MyActivity"
+                  android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SampleActivity"
+                  android:label="sample messages"
+                  android:parentActivityName=".MyActivity"/>
+        <!--<activity android:name=".UpdateSampleActivity"-->
+                  <!--android:label="sample messages of updateEvent"-->
+                  <!--android:parentActivityName=".MyActivity"/>-->
+        <!--<activity android:name=".DeleteSampleActivity"-->
+                  <!--android:label="sample messages of deleteEvent"-->
+                  <!--android:parentActivityName=".MyActivity"/>-->
+    </application>
+</manifest>
